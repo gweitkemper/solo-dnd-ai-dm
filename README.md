@@ -5,7 +5,7 @@ GPT Setup Files
 **docs/core-dm-prompt.txt **
 Paste this exactly into the custom GPT’s “Instructions” box.
 
-**docs/dm-rules.txt **
+**docs/dm-rules.md **
 Upload this to the GPT’s “Knowledge” section.
 
 **docs/examples.md **
