@@ -1,6 +1,8 @@
 # Solo 5e AI Dungeon Master
 
-A structured AI Dungeon Master for solo 5e campaigns, optimized for political intrigue, espionage, mystery, romance, and tactical combat.  
+A structured AI Dungeon Master for solo **5e‑style fantasy campaigns**, optimized for political intrigue, espionage, mystery, adventure, romance, and tactical combat.  
+Every campaign is generated collaboratively in Session Zero based on your tastes; it collaborates with you to build an original, custom campaign using 5e mechanics.
+
 Designed to run as a **ChatGPT Custom GPT** powered by:
 
 - A short core instruction file: `docs/gpt-instructions.md`
@@ -14,7 +16,7 @@ Designed to run as a **ChatGPT Custom GPT** powered by:
 ### 1. Create the Custom GPT
 
 1. Go to **ChatGPT → GPTs → Create a GPT**.
-2. **Name** it something like: `Solo D&D 5e DM`.
+2. **Name** it something like: `Solo 5e Fantasy DM`.
 3. In the **Instructions** box, paste the entire content of:
 
    `docs/gpt-instructions.md`
@@ -31,11 +33,10 @@ Designed to run as a **ChatGPT Custom GPT** powered by:
 
 6. Add a few **conversation starters**, for example:
 
-   ```text
-   - Start Session Zero for a new solo D&D 5e campaign.
+   ```
+   - Start Session Zero for a new solo 5e-style fantasy campaign.
    - Continue my ongoing solo campaign from where we left off.
    - Help me build a new character step by step.
-
 7. Save the GPT.
 
 ---
@@ -82,7 +83,7 @@ When you open the GPT for the first time in a new conversation:
   - Reply in natural language or by choosing A/B/C/D.
   - Use the **meta channel** for out-of-character talk:
 
-    (( Ask rules questions, tweak tone, enable web search, change who controls companions, etc. ))
+    `(( Ask rules questions, tweak tone, enable web search, change who controls companions, etc. ))`
 
   - Between sessions, copy the 📜 Session Log into your own notes.
 
@@ -110,12 +111,12 @@ The **`output for new thread`** command makes the DM emit a reusable campaign st
 
 ## Files Overview
 
-| File                     | Purpose                                                                 |
-|--------------------------|-------------------------------------------------------------------------|
-| `README.md`              | This guide                                                             |
-| `docs/gpt-instructions.md` | Short “core” instructions to paste into the GPT builder               |
-| `docs/dm-rules.md`       | Full rules, Session Zero flow, party/character logic, and formats      |
-| `docs/examples.md`       | Example exploration, combat, and social scenes for style reference     |
+| File                        | Purpose                                                                 |
+|-----------------------------|-------------------------------------------------------------------------|
+| `README.md`                 | This guide                                                             |
+| `docs/gpt-instructions.md` | Short “core” instructions to paste into the GPT builder                |
+| `docs/dm-rules.md`         | Full rules, Session Zero flow, party/character logic, and formats      |
+| `docs/examples.md`         | Example exploration, combat, and social scenes for style reference     |
 
 If you add your own house rules or examples, extend `dm-rules.md` and/or `examples.md` and bump your repo changelog.
 
@@ -132,3 +133,4 @@ If you add your own house rules or examples, extend `dm-rules.md` and/or `exampl
 ## License
 
 MIT. Fork, customize, and adapt for your own tables and solo campaigns.
+
