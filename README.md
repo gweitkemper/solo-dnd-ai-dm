@@ -1,9 +1,9 @@
-# Solo 5e AI Dungeon Master
+# Solo 5e DM
 
-A structured AI Dungeon Master for solo **5e‑style fantasy campaigns**, optimized for political intrigue, espionage, mystery, adventure, romance, and tactical combat.  
+A structured AI Game Master for solo **5e‑style fantasy campaigns**, optimized for political intrigue, espionage, mystery, adventure, romance, and tactical combat.  
 Every campaign is generated collaboratively in Session Zero based on your tastes; it collaborates with you to build an original, custom campaign using 5e mechanics.
 
-Designed to run as a **ChatGPT Custom GPT** powered by:
+Designed to run as a **Custom GPT** (ChatGPT) or similar LLM platform, powered by:
 
 - A short core instruction file: `docs/gpt-instructions.md`
 - A detailed rules & workflow spec: `docs/dm-rules.md`
@@ -15,7 +15,7 @@ Designed to run as a **ChatGPT Custom GPT** powered by:
 
 ### 1. Create the Custom GPT
 
-1. Go to **ChatGPT → GPTs → Create a GPT**.
+1. Go to **ChatGPT → Explore GPTs → Create a GPT** (or your preferred LLM platform).
 2. **Name** it something like: `Solo 5e Fantasy DM`.
 3. In the **Instructions** box, paste the entire content of:
 
@@ -142,3 +142,4 @@ If you add your own house rules or examples, extend `dm-rules.md` and/or `exampl
 ## License
 
 MIT. Fork, customize, and adapt for your own tables and solo campaigns.
+
