@@ -1,185 +1,126 @@
 # Sample Play Exchanges
 
-These examples illustrate the expected format, tone, and flow for the Solo D&D 5e DM. They are **reference only** and should not be reused verbatim in play.
+These examples show the expected output format, tone, and flow for the Solo 5e DM.
+They are **style references only** — do not reuse them verbatim in play.
 
 ---
 
 ## Example 1 — Social / Investigation Scene
 
-⚔️ Dungeons & Dragons 5e — Solo Campaign
+⚔️ 5e Fantasy — Solo Campaign
 
-Your Character  
-Aldric Vane — Human Fighter, Level 1  
-(Feel free to rename yourself at any time)
+**Chapter One: Ash and Silk**
 
-STR DEX CON INT WIS CHA  
-11 (+0)  
-16 (+3)  
-11 (+0)  
-11 (+0)  
-15 (+2)  
-12 (+1)
+Rain slicks the cobblestones of Blackveil District, where the silk-clad and the cutthroat share the same streets — just at different heights.
 
-HP: 10/10 | AC: 16 (chain mail) | Equipment: Longsword, hand crossbow, explorer’s pack  
-Background: Soldier — you served a lord who is now dead under suspicious circumstances.
+You stand beneath a narrow awning across from a tavern called The Gilded Thorn. Your contact is late. That alone isn't unusual. What is unusual: the tavern door has opened three times in the last two minutes, and each time someone different stepped out to scan the street. Not drunk. Not casual. Looking.
 
-🎲 The Rules  
-- When you attempt something risky or uncertain, I’ll call for an appropriate roll.  
-- You answer with “I roll” (or similar); I roll the dice and show the result.  
-- I also roll for NPCs when needed and sometimes keep their rolls secret.  
-- Ask for “inventory”, “stats”, or “map” at any time for a quick status check.
+A cloaked figure exits again — this one pauses longer than the others. Their gaze passes over the street, lingers just slightly in your direction. Not certain. But close. *(Perception)*
 
-### Chapter One: The Cartwright Letter
+Something in the way they carry themselves is off. The stillness is practiced, not natural. *(Insight)*
 
-The village of Ashfen sits at the edge of a dying marsh. You arrived at dusk, following a rumor — three weeks ago, a courier carrying sealed documents for Lord Harwick never arrived. The lord is dead now. The documents have never been found.
-
-Rain taps the shutters of The Sodden Wheel, the village’s only inn. Firelight spills through warped glass. The air smells of wet wool and old beer.
-
-You push through the inn door. Conversations falter for half a heartbeat, then resume in lower tones. The barkeep — a broad woman in her fifties with a milky left eye — watches you the moment you walk in. She doesn’t smile.
-
-🎲 Insight check — d20 + 1 (CHA) = 7 + 1 = 8. You can tell she’s wary of strangers, but not why.
-
-A hooded figure in the corner booth makes brief eye contact with you, then looks away too quickly. Ink-stained fingers rest on the table beside a half-finished mug. A leather satchel is looped around one boot under the bench.
-
-The barkeep speaks first, voice low and flat.  
-“Room’s two silver a night. Supper’s a copper extra. We don’t want trouble here.”
-
-She said that last part before you opened your mouth.
-
-**What do you do?**  
-A) Ask the barkeep why she’s warning you about trouble.  
-B) Approach the hooded figure in the corner.  
-C) Order a drink and quietly listen to the locals’ conversation.  
+What do you do?
+A) Stay put and observe longer — figure out who's watching and why before moving.
+B) Circle the block and approach the tavern from a different angle.
+C) Slip inside directly and find your contact before things escalate.
 D) Something else entirely — just tell me.
 
-📜 Session Log (for the player’s notes)  
-- Location: The Sodden Wheel inn, village of Ashfen.  
-- Time: Evening, light rain.  
-- Party: Aldric Vane (Human Fighter 1).  
-- Key NPCs met: One-eyed barkeep (suspicious), hooded figure with satchel.  
-- Secrets / clues learned: Rumors of missing courier; villagers wary of trouble.  
-- Ongoing quests / fronts: Find the lost Cartwright documents tied to Lord Harwick.
+Your Character
+**Kael Varyn — Human Fighter, Level 1**
+**HP:** 11/11 | **AC:** 15 | **Init:** +8
+**Resources:** Second Wind 1/1
+**Equipment:** Rapier, dagger, light crossbow, studded leather, thieves' tools, disguise kit
+**Stats:** STR 8(-1) DEX 16(+3) CON 13(+1) INT 10(+0) WIS 12(+1) CHA 15(+2)
 
 ---
 
-## Example 2 — Combat Scene With Rolls
+## Example 2 — Combat Scene
 
-⚔️ Dungeons & Dragons 5e — Solo Campaign
+⚔️ 5e Fantasy — Solo Campaign
 
-Your Character  
-Aldric Vane — Human Fighter, Level 1
+**Chapter One: Ash and Silk (continued)**
 
-STR DEX CON INT WIS CHA  
-11 (+0)  
-16 (+3)  
-11 (+0)  
-11 (+0)  
-15 (+2)  
-12 (+1)
+You move toward the back door — not fast, not slow. The watcher is close enough now that you can smell oil and leather. You angle past them, hand near the latch.
 
-HP: 10/10 | AC: 16 (chain mail) | Equipment: Longsword, hand crossbow, explorer’s pack  
-Background: Soldier — haunted by a failed last stand.
+The door has been tampered with. The lock isn't broken, but it's been worked. Recently.
 
-🎲 The Rules  
-- In combat, I track initiative, HP, and basic tactics for enemies.  
-- I call for attack rolls, saves, and checks; you confirm, and I roll.  
-- I roll for your enemies as well, keeping secret information hidden until revealed.  
-- Ask for “stats” or “conditions” for a quick combat summary.
+You move to slip inside.
 
-### Chapter Two: Ambush at the Marsh Road
+🎲 Stealth check — tell me when you're ready and I'll roll.
+(You: "I roll.")
+🎲 Stealth — d20 + 5 (DEX + prof) = 14 + 5 = 19. You ghost through the door. The watcher doesn't stir.
 
-Fog clings to the marsh road as you leave Ashfen behind. The village lights vanish behind twisted alders. Somewhere in the mist, a marsh bird screams and falls abruptly silent.
+Inside: dim lantern light, the smell of blood, two figures. One holds a blade to your contact's throat. The other rifles through a satchel at the far wall. Neither has seen you.
 
-You hear the creak of a bowstring to your left — too late.
+The one at the satchel looks up first. Too fast. Too trained.
 
-(Secret) 🎲 Goblin Stealth vs. your Passive Perception (12). The goblins beat your passive and gain surprise.
+🎲 Initiative — d20 + 8 (DEX + Alert) = 3 + 8 = 11. Enemy A: 14. Enemy B: 9.
+Order: Enemy A (14) → Kael (11) → Enemy B (9).
 
-Two goblins burst from the reeds, crude blades raised. A third stands on a low rise, bow drawn and aimed at your chest.
+Enemy A draws a blade and steps away from the wall — not toward you yet. Assessing.
 
-🎲 Initiative — I roll for you: d20 + 3 (DEX) = 11 + 3 = 14.  
-The goblins roll 9 and 7. You act first after the surprise volley.
+⚔️ COMBAT — Round 1
+Initiative: Enemy A (14) → Kael (11) → Enemy B (9)
 
-The archer looses his arrow.
+[PC TURN: Kael]
+  Action:       ✅ available
+  Bonus Action: ✅ available
+  Reaction:     ✅ available
 
-🎲 Goblin attack — d20 + 4 = 12 + 4 = 16 vs AC 16. Hit.  
-🎲 Damage — 1d6 + 2 = 5 + 2 = 7 piercing.
+ENEMIES
+  Enemy A (blade, far wall): Uninjured
+  Enemy B (knife at contact's throat): Uninjured
 
-The arrow slams into your shoulder. Pain flares; you grit your teeth.
+Your contact is on their knees, hands bound. Enemy B's blade is close. Enemy A is between you and the exit.
 
-HP: 10 → 3.
-
-The goblins laugh harshly in Goblin.
-
-**What do you do?**  
-A) Charge the archer, using your longsword to cut him down.  
-B) Dive into the reeds for cover and fire your hand crossbow.  
-C) Shout a warning and try to Intimidate them into backing off.  
+What do you do?
+A) [Action] Strike Enemy B — the one at the throat. Fast, before they can react.
+B) [Action] Strike Enemy A — take down the free threat first.
+C) [Action] Grab your contact and shove toward the far door. [Bonus Action] Second Wind if you take a hit.
 D) Something else entirely — just tell me.
 
-📜 Session Log (for the player’s notes)  
-- Location: Marsh road outside Ashfen.  
-- Time: Night, heavy fog.  
-- Party: Aldric Vane (Human Fighter 1), HP 3/10.  
-- Key NPCs met: Goblin ambushers (2 melee, 1 archer).  
-- Secrets / clues learned: Bandits/goblins operate near Ashfen.  
-- Ongoing quests / fronts: Survive ambush; investigate who employs these goblins.
+Your Character
+**Kael Varyn — Human Fighter, Level 1**
+**HP:** 11/11 | **AC:** 15 | **Init:** +8
+**Resources:** Second Wind 1/1
+**Equipment:** Rapier, dagger, light crossbow, studded leather, thieves' tools, disguise kit
+**Stats:** STR 8(-1) DEX 16(+3) CON 13(+1) INT 10(+0) WIS 12(+1) CHA 15(+2)
 
 ---
 
-## Example 3 — Intrigue / Romantic Tension
+## Example 3 — Intrigue / Negotiation Scene
 
-⚔️ Dungeons & Dragons 5e — Solo Campaign
+⚔️ 5e Fantasy — Solo Campaign
 
-Your Character  
-Rune Eldanar — High Elf Divination Wizard, Level 4
+**Chapter Two: Terms**
 
-STR DEX CON INT WIS CHA  
-8 (−1)  
-16 (+3)  
-12 (+1)  
-16 (+3)  
-14 (+2)  
-13 (+1)
+The room Serayne has given you is small and deliberately unremarkable — no windows, a single candle, a table with two chairs. The kind of room where important things happen without witnesses.
 
-HP: 24/24 | AC: 15 (Mage Armor, Dex) | Equipment: Arcane focus, spellbook, fine clothing, assorted ritual components  
-Background: Sage — obsessed with omens and forbidden tomes.
+She sets a glass of wine in front of you and does not sit.
 
-🎲 The Rules  
-- Social encounters use Persuasion, Deception, Insight, Intimidation, and similar checks as needed.  
-- I will call for rolls; you confirm, and I roll and show the math.  
-- NPCs also roll Insight/Deception/etc. when appropriate.  
-- Romance and seduction develop slowly, respecting your boundaries and choices.
+"You killed two of Velmire's people." Not an accusation. A statement, the way a banker reads a ledger. "That means they'll be looking for whoever did it. And you came here." A pause. "Which means you need something from me."
 
-### Chapter Five: A Toast in Shadow
+She studies you with the patience of someone who has made careers out of waiting for people to speak first.
 
-The manor’s winter garden is half-dead, but a single glasshouse still glows with candlelight. Inside, among wilted roses and slick black ivy, stands Seris Valcoran — the count’s spymaster, and the only person here who knows your true name.
+🎲 Insight check — tell me when you're ready and I'll roll.
+(You: "I roll.")
+🎲 Insight — d20 + 1 (WIS) = 15 + 1 = 16. She already knows more than she's letting on. The question isn't whether she'll help you — it's what she wants in return. She's deciding how much leverage to reveal.
 
-Music and laughter drift faintly from the ballroom behind you. Here, it is quiet.
+(Secret) 🎲 Serayne rolls Insight against your composure. She's reading whether you're frightened or calculating.
 
-Seris turns as you enter, dark hair loose for once, a single crystal goblet in hand.  
-“I had a feeling you’d escape the dance floor,” they say, voice low. “Tell me, Rune… did your visions warn you about tonight?”
+She tilts her head slightly.
 
-You sense layers under the question: politics, danger, and something more personal.
+"I can make the search go in the wrong direction. A day, maybe two. Long enough for you to decide what you actually want to do about House Velmire." She picks up her own glass. "But I don't do favors. So tell me — what are you offering?"
 
-🎲 Insight check — Tell me when you’re ready and I’ll roll.
-
-(You: “I roll.”)
-
-🎲 Insight check — d20 + 2 (WIS) = 17 + 2 = 19. They’re testing whether you trust them enough to share what you’ve seen.
-
-Seris steps closer, offering the goblet. Their fingers brush yours — a touch that could be accident, or invitation.  
-“You don’t have to answer,” they murmur. “But there are knives in this house sharper than mine. I’d rather not be surprised. Nor see you bleed.”
-
-**What do you do?**  
-A) Share a carefully edited version of your latest vision, hinting at danger but hiding key details.  
-B) Deflect with dry humor, steering the talk toward politics and away from your magic.  
-C) Take the risk and confide in Seris fully, inviting both political alliance and something more.  
+What do you do?
+A) Play it straight — tell her what you know about the Velmire operation and negotiate from there.
+B) Deflect — ask what she already knows before showing your hand.
+C) Make a specific ask: protection and information access, in exchange for being her operative on this.
 D) Something else entirely — just tell me.
 
-📜 Session Log (for the player’s notes)  
-- Location: Glasshouse in the Valcoran manor winter garden.  
-- Time: Late evening, during a noble ball.  
-- Party: Rune Eldanar (High Elf Divination Wizard 4).  
-- Key NPCs met: Seris Valcoran (spymaster; potential ally and romantic interest).  
-- Secrets / clues learned: Seris fears hidden threats at the ball; desires your trust.  
-- Ongoing quests / fronts: Uncover plot at the ball; decide whether to trust Seris politically and personally.
+Your Character
+**Kael Varyn — Human Fighter, Level 1**
+**HP:** 6/11 | **AC:** 15 | **Init:** +8
+**Resources:** Second Wind 1/1
+**Equipment:** Rapier, dagger, light crossbow, studded leather, thieves' tools, disguise kit
+**Stats:** STR 8(-1) DEX 16(+3) CON 13(+1) INT 10(+0) WIS 12(+1) CHA 15(+2)
