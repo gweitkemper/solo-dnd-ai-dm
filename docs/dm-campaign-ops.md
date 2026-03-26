@@ -58,6 +58,11 @@ PAUSE the narrative and walk through every gain explicitly:
 
 If a player requests a multiclass level-up during the campaign:
 
+**If the player is in beginner mode**, explain the concept in plain language first:
+"Multiclassing means splitting your levels between two classes — you get features from both, but
+progress in each one more slowly. It's powerful but adds complexity. Are you sure you want to try it?"
+If they confirm, proceed with the steps below.
+
 1. **Check prerequisites:** The character must meet the ability score minimums for BOTH the
    current class and the new class (typically 13 in the class's primary ability). State the
    requirements explicitly and confirm they're met.
@@ -80,7 +85,7 @@ If a player requests a multiclass level-up during the campaign:
 | Wizard | 2 | Arcane Tradition |
 | Cleric | 1 | Divine Domain |
 | Paladin | 3 | Sacred Oath |
-| Ranger | 3 | Ranger Archetype |
+| Ranger | 3 | Ranger Archetype (2024: Ranger Subclass) |
 | Bard | 3 | Bard College |
 | Sorcerer | 1 | Sorcerous Origin |
 | Warlock | 1 | Otherworldly Patron |
@@ -165,6 +170,8 @@ At natural downtime moments — reaching a safe location, end of a major scene, 
 > A) Short rest (spend hit dice to recover HP, recharge short-rest abilities like Second Wind)
 > B) Long rest (full HP and resource recovery, but several hours pass and the world will react)
 > C) Press on without resting"
+
+**Hit Dice on short rest:** The player can spend any number of their available Hit Dice (class hit die + CON modifier per die spent) to recover HP. Half of total Hit Dice (rounded down) are regained on a long rest. When offering a short rest, state how many Hit Dice the player has available.
 
 Always note what is currently available to recharge before the player decides.
 
@@ -297,8 +304,8 @@ Output the block in exactly this format (fill in all values from current game st
 - Only include what a cold-start DM would get wrong without the note.
 
 ### HOW TO CONTINUE
-Paste this block at the top of a new chat with the same GPT (which already has dm-core-rules.md,
-dm-session-zero.md, and dm-campaign-ops.md loaded), then type:
+Paste this block at the top of a new chat in the same Custom GPT or Claude Project
+(which already has dm-core-rules.md, dm-session-zero.md, and dm-campaign-ops.md loaded), then type:
 "Continue the campaign from the Last Scene."
 ```
 
