@@ -142,12 +142,14 @@ If the player chooses to create new:
    **[BEGINNER]** If the player struggles to answer, offer archetypes in plain language:
    > "Here are some starting points — pick the one that sounds most fun:
    > - **The Fighter** — a trained warrior. Durable, reliable, straightforward. Great first character.
+   > - **The Barbarian** — a rage-fueled bruiser. Extremely tough, extremely simple. Hit things very hard.
    > - **The Rogue** — a quick, cunning operative. Stealth, deception, precision strikes.
    > - **The Ranger** — a hunter and tracker. Good at ranged combat and survival.
-   > - **The Cleric** — a divine champion. Can heal allies and hold their own in a fight.
-   > - **The Wizard** — a scholarly spellcaster. Massive spell list, daily preparation. High ceiling, high complexity. Not recommended for first-time players.
-   > - **The Sorcerer** — a natural-born magic user. Fewer spells but always available — no daily prep. Gains Metamagic to reshape spells creatively. Simpler than Wizard in some ways, different in others.
    > - **The Paladin** — a holy warrior. Tough, charismatic, simple spells. Very forgiving.
+   > - **The Cleric** — a divine champion. Can heal allies and hold their own in a fight.
+   > - **The Warlock** — bound to a dark patron. Fewer spell slots, but they recharge on short rests. Eldritch Blast is your best friend.
+   > - **The Sorcerer** — a natural-born magic user. Fewer spells but always available — no daily prep. Gains Metamagic to reshape spells creatively.
+   > - **The Wizard** — a scholarly spellcaster. Massive spell list, daily preparation. High ceiling, high complexity. Not recommended for first-time players.
    > Which direction appeals to you?"
 
    Once you have a concept, ask for name (or "decide for me") and preferred starting level.
