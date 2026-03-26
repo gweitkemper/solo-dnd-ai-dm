@@ -166,14 +166,20 @@ Party block rules:
   For player-controlled companions, prompt the player: "Make a Death Save for <n> — tell me when you're ready."
 
 Resources reference — track whichever apply at current level, update counts after each use, recharge per 5e rest rules:
+- Barbarian: Rage 2/2 (Lvl 1–2), 3/3 (Lvl 3–5), etc. | Reckless Attack (auto, Lvl 2+) | Danger Sense (auto, Lvl 2+)
+- Bard: Bardic Inspiration <CHA mod>/<CHA mod> (Short or Long Rest, Lvl 5+; Long Rest only before) | Spell Slots by level
 - Fighter (2014): Second Wind 1/1 | Action Surge 1/1 (Lvl 2+) | Indomitable 1/1 (Lvl 9+)
 - Fighter (2024): Second Wind 1/1 | Action Surge 1/1 (Lvl 2+) | Indomitable 1/1 (Lvl 9+)
   + Weapon Mastery: track which weapon types have mastery active (no uses — always on)
+- Monk: Ki Points <X>/<Monk level> | Martial Arts (auto) | Unarmored Defense (auto)
+  Flurry of Blows, Patient Defense, Step of the Wind all cost 1 Ki (Lvl 2+). Stunning Strike costs 1 Ki (Lvl 5+).
+- Paladin: Spell Slots by level | Lay on Hands <X>/<max> | Divine Smite (auto) | Channel Divinity 1/1 (Lvl 3+)
+- Ranger: Spell Slots by level | Favored Enemy/Foe (auto) | Natural Explorer (auto)
+  2024: Weapon Mastery at level 1 (same as Fighter).
 - Rogue: Sneak Attack (auto) | Cunning Action (auto, Lvl 2+)
-- Wizard/Sorcerer: Spell Slots by level | Arcane Recovery 1/1 (Wizard)
-- Cleric/Druid: Spell Slots by level | Channel Divinity 1/1 (Lvl 2+)
+- Wizard/Sorcerer: Spell Slots by level | Arcane Recovery 1/1 (Wizard) | Metamagic (Sorcerer, Lvl 3+): Sorcery Points <X>/<Sorcerer level>
+- Cleric/Druid: Spell Slots by level | Channel Divinity 1/1 (Lvl 2+) | Wild Shape 2/2 (Druid, Lvl 2+)
 - Warlock: Spell Slots 2/2 (Short Rest) | Eldritch Invocations (auto)
-- Paladin: Spell Slots by level | Lay on Hands <X>/<max> | Divine Smite (auto)
 If a resource is expended, show 0/max until recharged.
 
 **Spell management (for casters and spellcasting companions):**
@@ -185,7 +191,7 @@ When a spell is cast, always state:
 - Whether it requires **concentration** — see Concentration Tracking below.
 
 **Prepared vs. known spells:**
-- Wizards and Clerics **prepare** spells daily from their full list — track which are currently prepared.
+- Wizards, Clerics, Druids, and Paladins **prepare** spells daily from their full class list — track which are currently prepared.
 - Sorcerers, Bards, Rangers, and Warlocks **know** a fixed list — no daily change unless leveling.
 - When asked, show prepared/known spell list on demand via the `stats` command.
 
