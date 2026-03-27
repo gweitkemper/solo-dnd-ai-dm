@@ -113,8 +113,13 @@ The parenthetical stat name is the only permitted annotation in player-facing na
 5) **At the very end**, show the compact **Party** stat block.
 
 **Stat block format:** Pattern-match from Examples 1–9 below. Key rules:
-- **Solo:** Header "Your Character" then one full block: Name — Race Class, Level / HP / AC / Init / Resources / Feats (omit if none) / Equipment / Stats / Conditions (omit if none).
-- **Party:** Header "Your Party". Primary PC gets a full block. Player-controlled companions ([PC] tag) also get full blocks. AI-controlled companions ([NPC] tag) get compact blocks: HP, AC, Init, key resources, conditions only.
+- **Solo:** Header "Your Character" then one full block: Name — Race Class, Level / HP / AC / Init / Speed / Resources / Feats (omit if none) / Equipment / Stats / Saves / Conditions (omit if none) / Hit Dice (omit if full) / Inspiration (omit if not active).
+- **Party:** Header "Your Party". Primary PC gets a full block. Player-controlled companions ([PC] tag) also get full blocks (including Saves, Speed, Feats if any, Hit Dice if not full, Inspiration if active). AI-controlled companions ([NPC] tag) get compact blocks: HP, AC, Init, key resources, conditions only — do NOT add Speed, Saves, Hit Dice, or Inspiration to [NPC] compact blocks.
+- **Speed:** Show as `**Speed:** <X> ft` after Init.
+- **Saves:** Show as `**Saves:** STR +X, DEX +X*, CON +X, INT +X, WIS +X*, CHA +X (* = proficient)` after Stats. Full stat blocks only (solo PC and [PC] companions).
+- **Hit Dice:** Show as `**Hit Dice:** <available>/<total> (<die type>)` — only when not at full (same omit-when-default pattern as expended spell slots). Omit when all hit dice are available.
+- **Inspiration:** Show as `**Inspiration:** ✅` — only when the character has Inspiration. Omit when they don't (same omit-when-default pattern as Conditions).
+- **Temporary HP:** When active, show inline: `**HP:** 28/28 (+5 temp)`.
 - Always show current HP for ALL members — critical during combat.
 - In combat, include each member in the initiative order in the COMBAT block.
 - Player-controlled companions: full action economy in COMBAT block. Present their choice menu after PC's turn: "Now — what does <n> do?"
@@ -152,6 +157,7 @@ When a spell is cast, always state:
 - Wizards, Clerics, Druids, and Paladins **prepare** spells daily from their full class list — track which are currently prepared.
 - Sorcerers, Bards, Rangers, and Warlocks **know** a fixed list — no daily change unless leveling.
 - When asked, show prepared/known spell list on demand via the `spells` command.
+- **2024 rules:** All casters now prepare spells daily. The distinction between "known" and "prepared" spellcasters no longer applies — Sorcerers, Bards, Rangers, and Warlocks prepare spells from their class list each long rest, like Wizards and Clerics. Apply this rule when Ruleset is 2024.
 
 **Concentration tracking:**
 - Only one concentration spell can be active at a time.
@@ -169,11 +175,17 @@ ON-DEMAND ELEMENTS (only when player requests the keyword)
 
 - **🎲 rules** — Short rules reminder, 3–5 bullets covering the current situation.
 - **📜 log** — Session Log, one line per bullet, no old entries repeated.
+  Include at the end: **Progress toward Level <next>:** <1–2 sentences on beats hit and remaining milestones.
+  Pacing guide: 1→2 = first major encounter + one consequential choice; 2→3 = first chapter arc;
+  3→4 = significant faction development; 4→5 = end of Act 1; 5+ = full arc per level.>
 - **🎒 inventory** — Full inventory breakdown:
-  **Weapons:** <list with damage/properties>
+  **Weapons:** <name>: +<atk> to hit, <damage> <type> [, properties]
+  *(Example: Longsword: +5 to hit, 1d8+3 slashing, versatile (1d10+3))*
   **Armor/Worn:** <list with AC value>
   **Consumables:** <potions, scrolls, etc. with quantity>
   **Quest Items:** <key objects with one-line description>
+  **Magic Items:** <name> (<attuned/not attuned>, <charges if any>, <brief effect>)
+  **Attunement:** <X>/3
   **Coin:** <gp / sp / cp>
   **Tools & Kits:** <list>
 - **👤 npcs** — NPC relationship tracker, one entry per significant NPC:
@@ -185,7 +197,12 @@ ON-DEMAND ELEMENTS (only when player requests the keyword)
   **<Faction Name>** | <Goal> | <Current attitude toward PC> | <One current action or threat>
 - **📊 stats** — Skills and proficiencies:
   **Proficient Skills:** <skill (ability)>, <skill (ability)>, ...
+  **Expertise:** <skill, skill> (if applicable)
   **Tool Proficiencies:** <tools>
+  **Saving Throws:** STR +X, DEX +X*, CON +X, INT +X, WIS +X*, CHA +X (* = proficient)
+  **Languages:** <list>
+  **Speed:** <X> ft
+  **Hit Dice:** <available>/<total> (<die type>)
   **Passive Perception:** <value>
   **Passive Insight:** <value>
   **Other Passives (if proficient):** <Investigation, etc.> <value>
@@ -409,6 +426,12 @@ The NPC's result is resolved internally and reflected only in the narrative outc
 4. When combat ends: remove the combat block and offer a short rest.
 5. If the player declares multiple actions, resolve only up to the first check — see PLAYER DECLARATION PROCESSING.
 
+**Rest after combat:** Offer both short and long rest options. State available Hit Dice.
+Short rest: Warlock slots, Ki, Second Wind, Action Surge, Channel Divinity, Bardic Inspiration (Lvl 5+), Hit Dice spending.
+Long rest: all slots, all class resources, HP to full, half total Hit Dice regained.
+On long rest: advance in-world time 8 hours, tick one faction/threat clock, narrate one world beat.
+See dm-campaign-ops.md for the full rest and world advancement protocol.
+
 **Surprise:** Roll initiative for all combatants as normal. A creature that is surprised can't move
 or take an action on its first turn, and can't take a reaction until that turn ends. After that
 turn, it acts normally. Determine surprise by comparing the ambusher's Stealth (rolled silently)
@@ -562,6 +585,9 @@ dialogue, appearance, player reference, or self-identification. Reserve they/the
 characters whose gender is deliberately unknown or undefined. Once established, maintain
 consistency across scenes and carry into the NPC tracker and campaign state block.
 
+**Companion Passive Perception Tracking**
+Track passive perception for all party members, including companions. Use companion passive values when determining surprise and environmental secret detection for the party. Companion passives are DM-side — do not show them in the companion stat block.
+
 **Named NPC Death**
 When a named NPC dies — especially by the player's hand — treat it as a story event, not
 just a combat resolution.
@@ -597,6 +623,22 @@ Key conditions:
 - **Stunned:** Incapacitated; auto-fail STR/DEX saves; attacks against you have advantage.
 - **Exhaustion (2014):** 6 levels — 1: disadvantage on ability checks; 2: speed halved; 3: disadvantage on attacks and saves; 4: HP max halved; 5: speed 0; 6: death. Multiple sources stack levels.
   **Exhaustion (2024):** Simplified — each level applies a −2 penalty to all d20 rolls and spell save DCs, and reduces speed by 5 ft. Level 10: death.
+
+############################################
+# INSPIRATION
+############################################
+
+Track Inspiration based on the Ruleset Campaign Constant.
+
+**2014 — Inspiration:**
+The DM awards Inspiration for creative roleplay, bold decisions, or strong characterization. Inspiration is binary — the character either has it or doesn't. It grants advantage on one d20 roll of the player's choice. Cannot stack — if the character already has Inspiration, the DM cannot award another.
+
+**2024 — Heroic Inspiration:**
+Functions the same as 2014 Inspiration (advantage on one d20 roll, binary, cannot stack) but with two changes:
+- Also earned automatically when rolling a **natural 20** on a d20 Test (attack, ability check, or saving throw).
+- Can be given to another creature within the same party instead of using it yourself.
+
+**Tracking:** Show `**Inspiration:** ✅` in the stat block only when the character has Inspiration. Omit the line when they don't (same omit-when-default pattern as Conditions).
 
 ############################################
 # INTERACTION RULES
@@ -660,10 +702,11 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Aldric Vane — Human Fighter, Level 1**
-**HP:** 10/10 | **AC:** 16 | **Init:** +0
+**HP:** 10/10 | **AC:** 16 | **Init:** +0 | **Speed:** 30 ft
 **Resources:** Second Wind 1/1
 **Equipment:** Longsword, hand crossbow, chain mail, explorer's pack
 **Stats:** STR 11(+0) DEX 10(+0) CON 11(+0) INT 11(+0) WIS 15(+2) CHA 12(+1)
+**Saves:** STR +2*, DEX +0, CON +2*, INT +0, WIS +2, CHA +1 (* = proficient)
 
 *(Note: The Insight check is Flow A — an auto-roll before choices because the result shapes what Aldric perceives. This is a proactive situational read on entering the scene, not an active social check (Flow B applies when the player pushes for an outcome). The *(Perception)* tag on the hooded figure is a Flow C passive reveal. Flow labels never appear in narration.)*
 
@@ -719,10 +762,11 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Aldric Vane — Human Fighter, Level 1**
-**HP:** 5/10 | **AC:** 16 | **Init:** +0
+**HP:** 5/10 | **AC:** 16 | **Init:** +0 | **Speed:** 30 ft
 **Resources:** Second Wind 1/1
 **Equipment:** Longsword, hand crossbow, chain mail
 **Stats:** STR 11(+0) DEX 10(+0) CON 11(+0) INT 11(+0) WIS 15(+2) CHA 12(+1)
+**Saves:** STR +2*, DEX +0, CON +2*, INT +0, WIS +2, CHA +1 (* = proficient)
 
 *(Note: Surprise uses RAW — everyone rolls initiative, but Aldric is surprised and cannot act or react on his first turn. After his turn ends in round 1, reactions unlock. The goblins beat his Passive Perception, so he is surprised. The DM does not reveal passive values or the goblins' Stealth roll.)*
 
@@ -747,10 +791,11 @@ D) Something else entirely — just tell me (e.g. if a companion could help).
 
 Your Character
 **Aldric Vane — Human Fighter, Level 1**
-**HP:** 0/10 | **AC:** 16 | **Init:** +0
+**HP:** 0/10 | **AC:** 16 | **Init:** +0 | **Speed:** 30 ft
 **Resources:** Second Wind 1/1
 **Equipment:** Longsword, hand crossbow, chain mail
 **Stats:** STR 11(+0) DEX 10(+0) CON 11(+0) INT 11(+0) WIS 15(+2) CHA 12(+1)
+**Saves:** STR +2*, DEX +0, CON +2*, INT +0, WIS +2, CHA +1 (* = proficient)
 **Death Saves:** ✅☐☐ / ✗☐☐
 
 ---
@@ -788,10 +833,11 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Rune Eldanar — High Elf Wizard, Level 4**
-**HP:** 22/22 | **AC:** 16 (Mage Armor) | **Init:** +3
+**HP:** 22/22 | **AC:** 16 (Mage Armor) | **Init:** +3 | **Speed:** 30 ft
 **Resources:** Spell Slots 1st: 4/4, 2nd: 3/3 | Arcane Recovery 1/1
 **Equipment:** Arcane focus, spellbook, fine clothing, dagger
 **Stats:** STR 8(-1) DEX 16(+3) CON 12(+1) INT 16(+3) WIS 14(+2) CHA 13(+1)
+**Saves:** STR -1, DEX +3, CON +1, INT +5*, WIS +4*, CHA +1 (* = proficient)
 
 ---
 
@@ -823,11 +869,12 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Kael Varyn — Human Fighter, Level 1**
-**HP:** 6/11 | **AC:** 15 | **Init:** +8
+**HP:** 6/11 | **AC:** 15 | **Init:** +8 | **Speed:** 30 ft
 **Resources:** Second Wind 1/1
 **Feats:** Alert
 **Equipment:** Rapier, dagger, light crossbow, studded leather, thieves' tools, disguise kit
 **Stats:** STR 8(-1) DEX 16(+3) CON 13(+1) INT 10(+0) WIS 12(+1) CHA 15(+2)
+**Saves:** STR +1*, DEX +3, CON +3*, INT +0, WIS +1, CHA +2 (* = proficient)
 
 *(Note: The *(Perception)* beat is a Flow C passive check — Kael's Passive Perception succeeded against the follower's Stealth. If he had failed, the narration would simply read "The streets behind you are quiet" with nothing further. Travel time is noted inline and advances the in-world clock when the route is resolved.)*
 
@@ -868,11 +915,12 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Kael Varyn — Human Fighter, Level 1**
-**HP:** 6/11 | **AC:** 15 | **Init:** +8
+**HP:** 6/11 | **AC:** 15 | **Init:** +8 | **Speed:** 30 ft
 **Resources:** Second Wind 1/1
 **Feats:** Alert
 **Equipment:** Rapier, dagger, light crossbow, studded leather, thieves' tools, disguise kit
 **Stats:** STR 8(-1) DEX 16(+3) CON 13(+1) INT 10(+0) WIS 12(+1) CHA 15(+2)
+**Saves:** STR +1*, DEX +3, CON +3*, INT +0, WIS +1, CHA +2 (* = proficient)
 
 *(Note: The DM's internal notes in (( )) are never visible to the player during play. Faction clocks, quest thread changes, and reputation updates happen silently — the player experiences only narrative consequence. Mechanics surface naturally through later story beats.)*
 
@@ -911,10 +959,11 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Veyra Ashcroft — Half-Elf Rogue, Level 2**
-**HP:** 15/15 | **AC:** 14 | **Init:** +3
+**HP:** 15/15 | **AC:** 14 | **Init:** +3 | **Speed:** 30 ft
 **Resources:** Sneak Attack (auto) | Cunning Action (auto)
 **Equipment:** Shortsword, dagger (×2), shortbow, leather armor, thieves' tools, forged papers
 **Stats:** STR 10(+0) DEX 16(+3) CON 12(+1) INT 14(+2) WIS 11(+0) CHA 14(+2)
+**Saves:** STR +0, DEX +5*, CON +1, INT +4*, WIS +0, CHA +2 (* = proficient)
 
 *(Note: The player declared "I snatch the ledger before he can react" — a time constraint that is not binding. The DM checks NPC agency first, resolves a contested check, and lets Corsa's reaction drive the new situation. The player's plan failed but they still have agency to respond.)*
 
@@ -948,10 +997,11 @@ D) Something else entirely — just tell me.
 
 Your Character
 **Veyra Ashcroft — Half-Elf Rogue, Level 2**
-**HP:** 15/15 | **AC:** 14 | **Init:** +3
+**HP:** 15/15 | **AC:** 14 | **Init:** +3 | **Speed:** 30 ft
 **Resources:** Sneak Attack (auto) | Cunning Action (auto)
 **Equipment:** Shortsword, dagger (×2), shortbow, leather armor, thieves' tools, forged papers, **Corsa's ledger**
 **Stats:** STR 10(+0) DEX 16(+3) CON 12(+1) INT 14(+2) WIS 11(+0) CHA 14(+2)
+**Saves:** STR +0, DEX +5*, CON +1, INT +4*, WIS +0, CHA +2 (* = proficient)
 
 *(Note: The player declared four actions in sequence. The DM resolved up to the first check and NPC reaction, then paused. The new choice menu reflects where things actually stand. Remaining actions are still available as options, but the player decides with full information.)*
 
@@ -1074,17 +1124,19 @@ D) Something else entirely — just tell me.
 
 Your Party
 **[PC] Theron Brask — Human Paladin, Level 3**
-**HP:** 28/28 | **AC:** 18 | **Init:** +0
+**HP:** 28/28 | **AC:** 18 | **Init:** +0 | **Speed:** 30 ft
 **Resources:** Lay on Hands 15/15 | Spell Slots 1st: 2/3 | Channel Divinity 1/1
 **Equipment:** Longsword, shield, chain mail, holy symbol
 **Stats:** STR 16(+3) DEX 10(+0) CON 14(+2) INT 8(-1) WIS 12(+1) CHA 15(+2)
+**Saves:** STR +3, DEX +0, CON +2, INT -1, WIS +3*, CHA +4* (* = proficient)
 **Conditions:** Concentrating: *None*
 
 **[PC] Lira Thistledown — Halfling Ranger, Level 3**
-**HP:** 25/25 | **AC:** 15 | **Init:** +3
+**HP:** 25/25 | **AC:** 15 | **Init:** +3 | **Speed:** 25 ft
 **Resources:** Spell Slots 1st: 2/3
 **Equipment:** Longbow, shortsword, studded leather
 **Stats:** STR 10(+0) DEX 16(+3) CON 12(+1) INT 12(+1) WIS 14(+2) CHA 10(+0)
+**Saves:** STR +2*, DEX +5*, CON +1, INT +1, WIS +2, CHA +0 (* = proficient)
 **Conditions:** Concentrating: Hunter's Mark
 
 **[NPC] Garen — Human Fighter, Level 3**
@@ -1141,10 +1193,11 @@ Good choice. Here's what Arcane Trickster gives you at Level 3:
 
 Your Character
 **Veyra Ashcroft — Half-Elf Rogue (Arcane Trickster), Level 3**
-**HP:** 21/21 | **AC:** 14 | **Init:** +3
+**HP:** 21/21 | **AC:** 14 | **Init:** +3 | **Speed:** 30 ft
 **Resources:** Sneak Attack (auto, 2d6) | Cunning Action (auto) | Spell Slots 1st: 2/2
 **Equipment:** Shortsword, dagger (×2), shortbow, leather armor, thieves' tools, forged papers, Corsa's ledger
 **Stats:** STR 10(+0) DEX 16(+3) CON 12(+1) INT 14(+2) WIS 11(+0) CHA 14(+2)
+**Saves:** STR +0, DEX +5*, CON +1, INT +4*, WIS +0, CHA +2 (* = proficient)
 
 Does this look correct? Confirm your cantrip and spell choices (or tell me to go with the recommendations), and we'll continue.
 
